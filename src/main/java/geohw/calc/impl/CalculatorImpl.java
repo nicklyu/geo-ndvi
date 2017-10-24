@@ -1,5 +1,7 @@
-package geohw.calc;
+package geohw.calc.impl;
 
+import geohw.calc.Calculator;
+import geohw.calc.FeatureProcessor;
 import geohw.config.GeoFileReader;
 import geohw.data.Band;
 import geohw.data.Ndvi;
@@ -37,7 +39,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class CalculatorImpl implements Calculator{
+public class CalculatorImpl implements Calculator {
 
     private final String NIR_BAND = "nir.path";
     private final String RED_BAND = "red.path";

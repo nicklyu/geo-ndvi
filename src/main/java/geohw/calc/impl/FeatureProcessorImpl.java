@@ -1,5 +1,6 @@
-package geohw.calc;
+package geohw.calc.impl;
 
+import geohw.calc.FeatureProcessor;
 import geohw.data.Ndvi;
 import org.geotools.feature.simple.SimpleFeatureBuilder;
 import org.geotools.feature.simple.SimpleFeatureTypeBuilder;
@@ -12,7 +13,7 @@ import org.opengis.feature.type.FeatureType;
 import org.springframework.stereotype.Component;
 
 @Component
-public class FeatureProcessorImpl implements FeatureProcessor{
+public class FeatureProcessorImpl implements FeatureProcessor {
     @Override
     public SimpleFeatureType getUpdatedFeatureType(FeatureType featureType) {
         SimpleFeatureTypeBuilder typeBuilder = new SimpleFeatureTypeBuilder();
