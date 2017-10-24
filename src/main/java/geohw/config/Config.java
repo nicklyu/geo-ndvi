@@ -16,16 +16,4 @@ import java.io.IOException;
 @ComponentScan(basePackages = "geohw")
 @PropertySource("classpath:application.properties")
 public class Config {
-    private final String NIR_PATH = "nir.path";
-    private final String RED_PATH = "red.path";
-
-    @Resource
-    private Environment ev;
-
-    @Bean
-    public GeoFileReader geoFileReader(){
-        return new GeoFileReader();
-    }
-
-
 }

@@ -2,6 +2,8 @@ package geohw;
 
 import geohw.calc.Calculator;
 import geohw.config.Config;
+import geohw.config.GeoFileSaver;
+import geohw.config.SaveMode;
 import org.geotools.feature.FeatureCollection;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.feature.simple.SimpleFeatureType;
@@ -18,7 +20,7 @@ public class Application {
         try {
             calculator.Initialize();
             FeatureCollection<SimpleFeatureType, SimpleFeature> featureCollection = calculator.calculateUpdatedFeatures();
-
+            GeoFileSaver.save(featureCollection, SaveMode.KML_FILE);
         } catch (IOException e) {
             e.printStackTrace();
         } catch (TransformException e) {
