@@ -12,10 +12,8 @@ import org.geotools.kml.KMLConfiguration;
 import org.geotools.xml.Encoder;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.feature.simple.SimpleFeatureType;
-import org.xml.sax.ContentHandler;
 
 import java.io.*;
-import java.net.MalformedURLException;
 import java.util.HashMap;
 import java.util.Map;
 

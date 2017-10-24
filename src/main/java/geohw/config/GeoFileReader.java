@@ -3,7 +3,6 @@ package geohw.config;
 import geohw.data.Band;
 import org.geotools.data.DataStore;
 import org.geotools.data.DataStoreFinder;
-import org.geotools.data.FeatureSource;
 import org.geotools.feature.FeatureCollection;
 import org.geotools.gce.geotiff.GeoTiffReader;
 import org.opengis.feature.simple.SimpleFeature;

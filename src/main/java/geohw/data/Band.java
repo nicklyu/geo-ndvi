@@ -9,5 +9,4 @@ import java.awt.image.RenderedImage;
 public class Band {
     private RenderedImage image;
     private GridCoverage2D coverage;
-
 }
