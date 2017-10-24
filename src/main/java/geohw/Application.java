@@ -20,7 +20,7 @@ public class Application {
         try {
             calculator.Initialize();
             FeatureCollection<SimpleFeatureType, SimpleFeature> featureCollection = calculator.calculateUpdatedFeatures();
-            GeoFileSaver.save(featureCollection, SaveMode.KML_FILE);
+            GeoFileSaver.save(featureCollection, SaveMode.GEOJSON);
         } catch (IOException e) {
             e.printStackTrace();
         } catch (TransformException e) {

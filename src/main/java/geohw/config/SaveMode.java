@@ -1,6 +1,8 @@
 package geohw.config;
 
 public enum SaveMode {
-    SHAPE_FILE,
-    KML_FILE
+    SHAPE,
+    KML,
+    GEOJSON,
+    ALL
 }
